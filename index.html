@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.bootcss.com/docsify/4.9.1/themes/vue.css" title="vue" />
+  <link rel="stylesheet" href="https://cdn.bootcss.com/docsify/4.9.1/themes/dark.css" title="dark" disabled="" />
+  <link rel="stylesheet" href="https://cdn.bootcss.com/docsify/4.9.1/themes/buble.css" title="buble" disabled="" />
+  <link rel="stylesheet" href="https://cdn.bootcss.com/docsify/4.9.1/themes/pure.css" title="pure" disabled="" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
+    title="docsify-themeable" disabled="disabled" />
+
+  <!-- baidu stats -->
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?48b6b5ad6307c295ea71151fb82a05eb";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+  <!-- google webmaster -->
+  <meta name="google-site-verification" content="pyo9N70ZWyh8JB43bIu633mhxesJ1IcwWCZlM3jUfFo" />
+</head>
+
+<body>
+  <div id="app">now loading...</div>
+  <script id="footer" type="text/xml">
+    <hr/>
+    <div align="center">
+      <p><a href="http://www.apachecn.org/" target="_blank"><font face="KaiTi" size="6" color="red">我们一直在努力</font></a><p>
+      <p><a href="https://github.com/apachecn/hands_on_Ml_with_Sklearn_and_TF/" target="_blank">apachecn/hands_on_Ml_with_Sklearn_and_TF</a></p>
+      <p><iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&repo=hands_on_Ml_with_Sklearn_and_TF&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+      <iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&repo=hands_on_Ml_with_Sklearn_and_TF&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+      <iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&repo=hands_on_Ml_with_Sklearn_and_TF&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+      <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=bcee938030cc9e1552deb3bd9617bbbf62d3ec1647e4b60d9cd6b6e8f78ddc03"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="ML | ApacheCN" title="ML | ApacheCN"></a></p>
+      <div style="text-align:center;margin:0 0 10.5px;">
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:728px;height:90px"
+             data-ad-client="ca-pub-3565452474788507"
+             data-ad-slot="2543897000"></ins>
+      </div>
+    </div>
+  </script>
+  <script>
+    window.docsPlugin = function (hook) {
+      var footer = document.querySelector('#footer').innerHTML
+      hook.afterEach(function (html) {
+        return html + footer
+      })
+      hook.doneEach(function () {
+        (adsbygoogle = window.adsbygoogle || []).push({})
+      })
+    }
+
+    window.$docsify = {
+
+      name: 'Sklearn 与 TensorFlow 机器学习实用指南',
+      auto2top: true,
+      loadNavbar: true,
+      loadNavbar: "_navbar.md",
+      loadSidebar: true,
+      loadSidebar: "SUMMARY.md",
+
+      subMaxLevel: 2,
+      copyCode: {
+        buttonText: "复制",
+        errorText: "Error",
+        successText: "已复制"
+      },
+
+      pagination: {
+        previousText: "上一章节",
+        nextText: "下一章节"
+      },
+      search: "auto", // 默认值
+
+      search: [
+        "/", // => /README.md
+        "/guide", // => /guide.md
+        "/get-started", // => /get-started.md
+        "/docs" // => /zh-cn/README.md
+      ],
+
+      // 完整配置参数
+      search: {
+        noData: {
+          "/de-de/": "Keine Ergebnisse!",
+          "/": "没有结果!"
+        },
+        paths: "auto",
+        placeholder: {
+          "/de-de/": "Suche",
+          "/": "搜索"
+        }
+      },
+      executeScript: true,
+
+      plugins: [window.docsPlugin],
+    }
+  </script>
+  <script src="https://cdn.bootcss.com/docsify/4.9.1/docsify.min.js"></script>
+  <!-- <script src="//unpkg.com/docsify-copy-code@2"></script> -->
+  <script crossorigin="anonymous" integrity="sha384-sYOyNeex0cyb6dQa6zzcQHI0p3TYOq6HijZIvlfC58ULfp6gggWdtRg2TvkMB0Dp"
+    src="//lib.baomitu.com/docsify/4.9.1/plugins/emoji.min.js"></script>
+  <script src="https://cdn.bootcss.com/prism/9000.0.1/components/prism-python.min.js"></script>
+  <script src="https://unpkg.com/docsify-copy-code"></script>
+  <script src="https://cdn.bootcss.com/docsify/4.9.1/plugins/emoji.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.bootcss.com/docsify/4.9.1/plugins/search.js"></script>
+  <script>
+    Prism.languages.py = Prism.languages.python
+  </script>
+</body>
+
+</html>
